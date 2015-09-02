@@ -357,9 +357,8 @@ footer p {
     padding: 7px;
     box-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
     margin-bottom: 20px;
-    width: 50%;
+    width: 100%;
     height: 650;
-    /* line-height: 0; */
     opacity: 0.8;
     margin: 15px auto 10px;
     background-color: goldenrod;
@@ -371,7 +370,7 @@ footer p {
 }
 
 .nEpley{
-  width: 20%;
+  width: 30%;
   height:auto;
   overflow: hidden;
 
@@ -438,7 +437,11 @@ REPONSIVE CSS
     Display: none;}
 .logoblob {
     Display: none;}
-    
+.repair-content {
+  width: auto;
+  height: auto;
+
+}    
 }
 
 
