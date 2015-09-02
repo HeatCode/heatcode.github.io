@@ -182,6 +182,20 @@ button[type="submit"] {
 
 }
 
+.uc {
+  width: 100%;
+  height:auto;
+}
+
+.ucm {
+  max-width: 600px;
+  height: auto;
+  padding: 5px 5px;
+  margin: 0 auto;
+  background: transparent;
+
+}
+
 /********************
 #mainBar Navigation
 ********************/
@@ -399,7 +413,7 @@ footer p {
 
 .lesson-grid li {
   max-width: 10px;
-  height: auto;
+  height: auto;  
   display: inline-table;
 }
 
@@ -428,20 +442,24 @@ REPONSIVE CSS
 
 /***Modify CSS to hid link on smaller devices***/
 
+
+
 @media (min-width: 320px) and (max-width: 568px){
-  #mainBar ul {
+#mainBar ul {
     Display: none;}
-    .photonavi {
-      display: none;}
-  .menuA-ul {
+.menuA-ul {
     Display: none;}
+
+.ucm {
+    width: 300px;
+    }
 .logoblob {
     Display: none;}
-.repair-content {
-  width: auto;
-  height: auto;
 
-}    
+.repair-content {
+  width: 50%;
+  height: auto;
+  }    
 }
 
 
@@ -451,9 +469,14 @@ REPONSIVE CSS
   #mainBar button {
     Display: none;
   
-}
-#menuA select,
+  }
+  #menuA select,
   #menuA button {
     Display: none;
   
+  }
+
+  .ucm {
+    width: 100%;
+    }
 }
