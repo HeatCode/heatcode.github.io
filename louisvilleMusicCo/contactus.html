@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account Login</title>
+		<link href='http://fonts.googleapis.com/css?family=Raleway|Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    
+    <header>
+
+		<!-- top navigation bar -->
+	<div class"slide">
+		<div id="menuA">
+			<ul class="menuA-ul">
+				<li class="selected"><a href="contactus.html">
+					Sign In
+				</li></a>
+				<li><a href="contactus.html">
+					Create Account
+				</a></li>
+				<li><a href="contactus.html">
+					Contact Us
+				</a></li>
+			</ul>
+		</div>
+
+		<div id="mainBar">
+			<ul>
+				<li class="selected"><a href="index.html">Home</li></a>
+				<li><a href="http://www.louisvillemusicco.com/woodwinds-126529.cfm">Woodwinds</li></a>
+				<li><a href="http://www.louisvillemusicco.com/brass-126530.cfm">Brass</a></li>
+				<li><a href="http://www.louisvillemusicco.com/percussion-126531.cfm">Percussion</a></li>
+				<li><a href="http://www.louisvillemusicco.com/strings-126533.cfm">Strings</a></li>
+				<li><a href="http://www.louisvillemusicco.com/rentals-128014.cfm">Rentals</li></a>
+			</ul>
+		</div>
+			
+<!-- Cart image, .searchbox and buttons -->
+
+
+		<div id="gradient slide"></div>
+			<form class="searchbox" action="">
+  				<input type="search" placeholder="Search" />
+  				<button type="submit" value="search" id="sbutton">&nbsp</button>
+			 </form>
+		</div>	
+
+<!-- .icons Facebook & Twitter -->		
+		<div class="icons">
+				<a href="https://twitter.com/LMCmusiccompany" class="tfIcons">
+					<img src="images/t.svg">
+				</a>
+				<a href="https://www.facebook.com/pages/Louisville-Music-Co/129696240544295?ref=hl" class="tfIcons">
+				<img src="images/f.svg">
+				</a>
+
+				<a href="https://plus.google.com/u/0/+Louisvillemusicco01/posts" class="tfIcons"><img src="images/g+.svg"></a>
+			</div>
+</div>
+</header>
+
+
+    <body>
+      <form action="contactus.html" method="post" id="form">
+       <h2>Sign in or create an account.</h2>
+       <p>* = Required Fields</p>
+
+        <fieldset>
+          
+          <legend>
+          	<span class="number">I am a returning customer. </span>
+          </legend>   
+          
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
+            <label for="password">Password:                 </label>
+            <input type="password" id="password" name="user_password">
+
+            <button type="submit" id="fbutton">Go!</button>
+
+     	</fieldset>
+
+        
+
+         <fieldset>
+          
+          <legend>
+          	<span class="number"> I am a New customer.
+          	</span>
+          </legend>   
+          
+          
+         	<label for="name">
+         		Name:
+         	</label>
+            <input type="text" id="name" name="user_name">
+            
+            <label for="mail">
+            	Email:
+            </label>
+            <input type="email" id="mail" name="user_email">
+            
+            <label for="password">
+            	Password:
+            </label>
+            <input type="password" id="password" name="user_password">
+            
+            <label>
+            	Age:
+            </label>
+            <input type="radio" id="under_13" value="under_13" name="user_age">
+
+            <label for="under_13" class="light">
+            	Under 13
+            </label>
+            <br>
+          <input type="radio" id="over_13" value="over_13" name="user_age">
+
+          <label for="over_13" class="light">
+          	13 or Older
+          </label>
+                 
+          
+        </fieldset>	
+
+
+
+
+        
+        <fieldset>
+          
+          	<legend>
+      			<span class="number"> 
+          			Your Profile
+          		</span>
+      		</legend>
+
+            <label for="bio">
+            	Biography:
+            </label>
+            <textarea id="bio" name="user_bio">
+            </textarea>
+
+            <label for="job">
+            	What Are You Interested In?
+            </label>     
+            <!-- Drop Down -->
+
+          <select id="job" name="user_interest">
+           <optgroup label="Music">
+		      <option value="performers_writers">
+		      	Performers and Writers
+		      </option>
+		      <option value="recording">
+		      	Recording
+		      </option>
+			  <option value="music_education">
+			    	Music Education
+			  </option>
+			<option value="radio_TV">
+					Radio and Television
+			</option>
+			<option value="symphony_orchestra">
+				Symphony and Orchestra
+			</option>
+			<option value="gospel">Gospel</option>
+			<option value="music_health">
+				Music Health
+			</option>
+			<option value="music_industry_merchandising">
+				Music Industry Merchandising
+			</option>
+			<option value="instrument_work_ development">
+				Instrument Work and Development
+			</option>
+			<option value="musical_composer">
+				Musical Composer
+			</option>
+			<option value="music_director/producer">
+				Music Director/Producer
+			</option>
+			<option value="orchestra_conductor">
+				Orchestra Conductor
+			</option>
+			<option value="professional_musician">
+				Professional Musician
+			</option>
+			<option value="stage_manager">
+				Stage Manager
+			</option>
+			<option value="technical_writer">
+				Technical Writer
+			</option>
+        </optgroup>
+
+
+        <optgroup label="Drama/Theater Arts/Theater"> 
+
+            <option value="arranger">
+            	Arranger
+            </option>
+            <option value="choreographer">
+            	Choreographer
+            </option>
+            <option value="college_instructor">
+            	College nstructor
+            </option>
+		</optgroup>
+             
+        
+        </select> 
+          <label>Level of Education:</label>
+		<input type="checkbox" id="developement" value="education_level_new" name="user_education">
+
+		<label class="light" for="newb">
+			Complete Newb.  That's OK we love Newbs!
+		</label>
+		<br>
+          
+          <input type="checkbox" id="design" value="education_level_aas" name="user_education">
+          <label class="light" for="aas">
+        	  A.A.S
+      	  </label>
+      	  <br>
+          
+          <input type="checkbox" id="business" value="education_level_ba" name="user_education">
+
+          <label class="light" for="ba">B.A.</label>
+          <br>
+          <input type="checkbox" id="business" value="education_level_phd" name="user_education">
+
+          <label class="light" for="phd">PhD</label>
+     </fieldset>
+        
+        
+        <button type="submit">Go!</button>
+      
+        
+        
+      </form>
+      
+      
+    </body>
+</html>
