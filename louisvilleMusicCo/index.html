@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>New Musical Instrument Store in Louisville, KY | Louisville Music Co.</title>
+    <link rel="stylesheet" type="text/css" href="">
     <link href='http://fonts.googleapis.com/css?family=Raleway|Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
    	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -97,7 +98,7 @@
 
 <!---First Animation -->
 
-<div class="repairBox">
+<div class="repairBox entry">
 		<ul class="repair-content">
 						<li>
 					<h1>Repairs</h1>
@@ -111,28 +112,37 @@
 				</li>
 				<br>
 				<li>
-					<span>Do I need to make an appointment?</span> 
+					<span>
+						Do I need to make an appointment?
+					</span> 
 					Yes.  You can contact Norm directly at 502-777-6732 or email him at 
 					<a href="mailto:nrebrassworks@gmail.com">nrebrassworks@gmail.com</a> to request a quote.
 				</li>
 				<br>
 				<li>
-					<span>How long does it take to order a custom instrument?</span> 
+					<span>
+						How long does it take to order a custom instrument?
+					</span> 
 					Custom instruments and modifications can take a couple weeks to a few months, depending on the craftsmanship and time involved.
 				</li>
 				<br>
 				<li>
-					<span>Do you buy used instruments for parts?</span>
+					<span>
+						Do you buy used instruments for parts?
+					</span>
 					Yes, we happily purchase used instruments for recycling purposes.
 				</li>
 				<br>
 				<li>
-					<span>Do you have a stringed instrument repair?</span>
+					<span>
+						Do you have a stringed instrument repair?
+					</span>
 					Unfortunately we do not have stringed instrument repair available at this time.
 				</li>
 				<br>
 				<li>
-					<span>Do you have pickup and delivery available?</span>
+					<span>Do you have pickup and delivery available?
+					</span>
 					We offer instrument pickup and delivery to the greater Louisville area.
 				</li>
 			</ul>
@@ -220,7 +230,9 @@
 	</p>
 	
 	<p>
-	<a href="info@louisvillemusicco.com">Info@LouisvilleMusicCo.com</a>
+		<a href="mailto:info@louisvillemusicco.com?subject=New%20Teammates">
+			Info@LouisvilleMusicCo.com
+		</a>
 	</p>
 
 </div>
@@ -242,15 +254,15 @@
 			   </tr>
 			    <tr>
 			      <td>13040 Eastgate Park Way</td> 
-			      <td>Sign In</td>
-			      <td>About Us</td>
+			      <td><a href="contactus.html">Sign In</a></td>
+			      <td><a href=".introinfo">About Us</a></td>
 			      <td>M-F:	10:00 am - 5:00 pm</td>
 			   </tr>
 			   <tr>
 			      <td>Suite 108</td>			   	
 			      <td>Account Settings</td>
-			      <td>Employment</td>
-			      <td>Sat:	by appointment</td>
+			      <td><a href="mailto:info@louisvillemusicco.com?subject=New%20Teammates">Employment</a></td>
+			      <td>Sat: By Appointment</td>
 			   </tr>
 			    <tr>
 			 	  <td>Louisville, KY 40223 USA</td>	
@@ -291,7 +303,7 @@
 	<script src="js/viewportchecker.js"></script>
 	<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 
-<script type="text/javascript">
+	<script type="text/javascript">
 	jQuery(document).ready(function() {
 		jQuery('.slide').addClass("hidden").viewportChecker({
 		    classToAdd: 'visible animated slideInDown', // Class to add to the elements when they are visible
@@ -320,7 +332,7 @@
           {
         
         
-        if (windowScrollTop > 60) {
+        if (windowScrollTop > 0) {
             $('.banner').css('display', 'none');
             $('.banner').css('display', 'block');
         } 
@@ -331,19 +343,19 @@
     });
 
 
-    var firstAnimation = function () {
-        $('.repairBox, .repair-content').each(function () {
-            $(this).delay(500).animate({
-                opacity: 1,
-                height: '500',
-                width: '1000'
-            },
-           2000);
-        });
+    // var firstAnimation = function () {
+    //     $('.repairBox, .repair-content').each(function () {
+    //         $(this).delay(500).animate({
+    //             opacity: 1,
+    //             height: '600',
+    //             width: '800'
+    //         },
+    //        4000);
+    //     });
     };
 
     var secondAnimation = function () {
-        $('.lessons:eq(0)').delay(1000).animate({ opacity: 1 }, 'slow', function () {
+        $('.lessons:eq(0)').delay(5000).animate({ opacity: 1 }, 'slow', function () {
             $(this).find('h4').css('background-color', '#B5C3D5');
         });
       };
@@ -352,7 +364,7 @@
 
     if (windowWidth <= 549) 
     	{
-    		if (windowScrollTop < 600) {
+    		if (windowScrollTop < 400) {
             $('.repairBox, .repair-content').css('background', 'goldenrod');
             firstAnimation();
         	}
@@ -391,5 +403,7 @@
 
 
 </script>
+
+
 </body>
 </html>
