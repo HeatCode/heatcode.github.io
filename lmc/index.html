@@ -13,23 +13,24 @@
 	<header>
 
 		<!-- top navigation bar -->
-	<div class"slide">
+	<div class>
 		<div id="menuA">
-			<ul class="menuA-ul">
+			<ul class="menuA-ul nav">
 				<li class="selected"><a href="contactus.html">
 					Sign In
 				</li></a>
 				<li><a href="contactus.html">
 					Create Account
 				</a></li>
-				<li><a href="contactus.html">
+				<li><a href="mailto:info@louisvillemusicco.com?subject=Messages%20from%20site">
 					Contact Us
 				</a></li>
 			</ul>
 		</div>
 
+	<!-- top navigation bar 2 -->
 		<div id="mainBar">
-			<ul>
+			<ul class="nav">
 				<li class="selected"><a href="index.html">Home</li></a>
 				<li><a href="http://www.louisvillemusicco.com/woodwinds-126529.cfm">Woodwinds</li></a>
 				<li><a href="http://www.louisvillemusicco.com/brass-126530.cfm">Brass</a></li>
@@ -172,7 +173,7 @@
 			<li><a href="http://www.louisvillemusicco.com/lessons-128062.cfm"><h3>Music Lessons</h3></a></li>
 			<br>	
 			<li>
-				Contact us about music lessoons for children, teens and adults from some of the best music teachers in Louisville
+				<a href="mailto:info@louisvillemusicco.com?subject=Messages%20from%20site">Contact us</a> about music lessons for children, teens and adults from some of the best music teachers in Louisville
 			</li>
 				<br>
 			<li><a href="http://www.louisvillemusicco.com/repairs-128015.cfm"><h3>Instrument Repairs</h3></a></li>
@@ -272,13 +273,13 @@
 			   	 
 			   </tr>
 			   <tr>
-			   	  <td>Phone: 502-365-1597</td>	
+			   	  <td><a href="tel:1-502-365-1597">Phone: 502-365-1597</a></td>	
 			      <td>Conditions of Use</td>
 			      <td></td>
 			      <td></td>
 			   </tr>
 			   <tr>
-			   	  <td><a href="contactus.html">
+			   	  <td><a href="mailto:info@louisvillemusicco.com?subject=Messages%20from%20site">
 			   	  	Contact Us
 			   	  </a></td>	
 			      <td></td>
@@ -299,7 +300,10 @@
 	</footer>
 
 
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
 	<script src="js/viewportchecker.js"></script>
 	<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 
@@ -319,89 +323,6 @@
 		    offset: 100    
 		   });   
 	});                   
-</script>
-
-<script type="text/javascript">
-
-	var windowWidth = $(this).width();
-    var windowHeight = $(this).height();
-    var windowScrollTop = $(this).scrollTop();
-    
-      $(window).scroll
-      (function () 
-          {
-        
-        
-        if (windowScrollTop > 0) {
-            $('.banner').css('display', 'none');
-            $('.banner').css('display', 'block');
-        } 
-        else {
-            $('.banner').css('display', 'block');
-            $('.banner').css('display', 'none');
-        }
-    });
-
-
-    // var firstAnimation = function () {
-    //     $('.repairBox, .repair-content').each(function () {
-    //         $(this).delay(500).animate({
-    //             opacity: 1,
-    //             height: '600',
-    //             width: '800'
-    //         },
-    //        4000);
-    //     });
-    };
-
-    var secondAnimation = function () {
-        $('.lessons:eq(0)').delay(5000).animate({ opacity: 1 }, 'slow', function () {
-            $(this).find('h4').css('background-color', '#B5C3D5');
-        });
-      };
-
-
-
-    if (windowWidth <= 549) 
-    	{
-    		if (windowScrollTop < 400) {
-            $('.repairBox, .repair-content').css('background', 'goldenrod');
-            firstAnimation();
-        	}
-            
-            if (windowScrollTop > 1750) {
-            $('.lessons, .lesson-grid').css('background', 'goldenrod');
-            secondAnimation();
-        	}
-     	} 
-
-    else if (windowWidth > 549 && windowWidth <= 991) 
-    	{
-	        if (windowScrollTop > 480) {
-	            $('.repairBox, .repair-content').css('background', 'goldenrod');
-	            firstAnimation();
-	        }
-	        if (windowScrollTop > 1150) {
-	            $('.lessons, .lesson-grid').css('background', 'goldenrod');
-	            secondAnimation();
-	        }
-	      }
-
-    else {
-        	if (windowScrollTop > 450) 
-        	{
-            $('.repairBox, .repair-content').css('background', 'goldenrod');
-            firstAnimation();
-        	}
-        
-	        if (windowScrollTop > 850) {
-	            $('.lessons, .lesson-grid').css('background', 'goldenrod');
-	            secondAnimation();
-	        }
-	        
-      }
-
-
 </script>
 
 

@@ -10,37 +10,9 @@
 
     
     <header>
-
-		<!-- top navigation bar -->
-	<div class"slide">
-		<div id="menuA">
-			<ul class="menuA-ul">
-				<li class="selected"><a href="contactus.html">
-					Sign In
-				</li></a>
-				<li><a href="contactus.html">
-					Create Account
-				</a></li>
-				<li><a href="contactus.html">
-					Contact Us
-				</a></li>
-			</ul>
-		</div>
-
-		<div id="mainBar">
-			<ul>
-				<li class="selected"><a href="index.html">Home</li></a>
-				<li><a href="http://www.louisvillemusicco.com/woodwinds-126529.cfm">Woodwinds</li></a>
-				<li><a href="http://www.louisvillemusicco.com/brass-126530.cfm">Brass</a></li>
-				<li><a href="http://www.louisvillemusicco.com/percussion-126531.cfm">Percussion</a></li>
-				<li><a href="http://www.louisvillemusicco.com/strings-126533.cfm">Strings</a></li>
-				<li><a href="http://www.louisvillemusicco.com/rentals-128014.cfm">Rentals</li></a>
-			</ul>
-		</div>
-			
 <!-- .icons Facebook & Twitter -->		
 		<div class="icons">
-        <a href="index.html" alt="home"><img src="images/dna.png" class="tfIcons"> 
+        <a href="index.html" alt="home"><img src="images/fleur-de-lis3.jpg" class="tfIcons"></a>
         <a href="https://twitter.com/LMCmusiccompany" class="tfIcons">
 					<img src="images/t.svg">
 				</a>
@@ -55,7 +27,8 @@
 
 
     <body>
-      <form action="contactus.html" method="post" id="form">
+      <form id="form" action="..." method="post">
+
        <h2>Sign in or create an account.</h2>
        <p>* = Required Fields</p>
 
@@ -227,12 +200,53 @@
      </fieldset>
         
         
-        <button type="submit">Go!</button>
+        <button type="submit" id="fbutton">Go!</button>
       
         
         
       </form>
       
-      
+  <!-- JS for Submit Go Button
+  To display form information -->
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js">
+</script>
+
+<script>
+     $(document).ready(function(){
+       $('#form').submit(function(){
+      alert("Information Sent.\nYou Will Be Hearing From Us Soon.");
+
+      });
+       $(location).attr('ttp://heatcode.github.io/lmc/index.html');
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>
