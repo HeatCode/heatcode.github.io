@@ -9,7 +9,7 @@ $("#menuA a").each(function(){
   //Create an option
   var $option = $("<option></option>");
   
-  //Deal with seceted options depending on current page
+  //Deal with selected options depending on current page
 
 if ($anchor.parent().hasClass("selected")) {
 $option.prop("selected", true);

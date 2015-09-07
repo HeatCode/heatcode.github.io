@@ -170,9 +170,8 @@ body{
   padding: 13px;
   width: 335px;
   margin: 10px auto;
-  box-sizing:border-box;
   border-radius: 6px;
-   box-shadow: 
+  box-shadow: 
      0 2px 4px 0 rgba(72, 72, 72, 0.83),
      0 10px 15px 0 rgba(126, 126, 126, 0.12),
      0 -2px 6px 1px rgba(199, 199, 199, 0.55) inset, 
@@ -209,7 +208,6 @@ input[type="search"] {
   display: inline-block;
   background-color: #fff;
   max-width: 100%; 
-  margin-right: 10px 75px;
   text-align: right;
     }
 
@@ -308,11 +306,8 @@ table {
 
 
 caption {
-/*  font-size: 100em;*/
   font-weight: 400;
-  padding: 1 px 0;
-
-
+  padding: 1px 0px;
  }
 
 thead th {
@@ -443,7 +438,7 @@ form {
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
-  background: ##E00000;
+  background: #E00000;
   border-radius: 8px;
 }
 
