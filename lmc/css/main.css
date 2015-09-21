@@ -61,7 +61,6 @@ Top Navigation bar
     background-color: #fff;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-left: 3px solid #ccc;
     text-align: center;
     margin: 0 auto;
     padding: 4px;
@@ -79,15 +78,17 @@ Top Navigation bar
 ********************/
 .nav {
     border:1px solid #b7b7b7;
-    border-width:2px 0;
+    border-width:1px 0;
     list-style:none;
     margin:0;
     padding:0;
     text-align:center;
 }
 .nav li {
-    display:inline;
+    display:inline-block;
+
 }
+
 .nav a {
     display:inline-block;
     padding:10px;
@@ -105,7 +106,6 @@ Top Navigation bar
     background-color: #FFFFFF;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-left: 3px solid #ccc;
     text-align: center;
     padding: 4px;
     text-decoration: none;
