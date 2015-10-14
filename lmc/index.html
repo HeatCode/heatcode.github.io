@@ -81,7 +81,7 @@
  -->
 
 <!-- #shopConnect Bar -->
-
+<!-- First Animation -->
 	<img src="images/logoBlob.png" alt="Company Logo and Newest Music Store In Louisville Area" class="logoblob entry">
 		
 </header>		
@@ -91,7 +91,9 @@
 <!-- Header and Summary -->
 
 <div class="entry">	
+
 		<div class = "introinfo">
+			<img src="images/music.png" class="composers" alt="Famous composers Jimi Hendrix, Beethoven, George Gershwin, and Louis Armstrong">
 			<h1>Newest Music Store In Louisville Area</h1>
 		<p>
 			Looking for a new music store in Louisville to assist you with your musical instrument and music supply needs? Then let the expert staff at Louisville Music Co. put its years of experience and musical training to work for you.
@@ -106,9 +108,8 @@
 				<br>
 </div>
 
-<!---First Animation -->
-
 <div class="repairBox entry">
+		<img src="images/repair.svg" class="areaIdImage" alt="Gears">
 		<ul class="repair-content">
 						<li>
 					<h1>Repairs</h1>
@@ -163,41 +164,45 @@
 
 
 <div class="entry">
+	<img src="images/check.svg" class="areaIdImage" alt="Check Mark">
 	<div class="servicesli">
-			<h3>Instruments for Sale</h3>
-		<ul>
-			
-			<li>
-				Shop for all types of musical instruments from top manufacturers with the help of our expert staff.
-			</li>
-			
-			<li><a href="http://www.louisvillemusicco.com/rentals-128014.cfm">
-				<h3>Instrument Rentals</h3>
-			</a></li>
-			
-			<li>
-				Renting a musical instrument allows you the flexibility to try before you buy, a great option especially for younger musicians and students, with absolutely no long-term contract of commitment.</li>
-			
-			<li><h3>Music Supplies</h3></li>
-			<li>
-				We offer parts and accessories for all brass, wind, string and percussion instruments from top manufacturers.</li>
-				
-			<li><a href="http://www.louisvillemusicco.com/lessons-128062.cfm"><h3>Music Lessons</h3></a></li>
-				
-			<li>
-				<a href="mailto:info@louisvillemusicco.com?subject=Messages%20from%20site">Contact us</a> about music lessons for children, teens and adults from some of the best music teachers in Louisville
-			</li>
-				
-			<li><a href="http://www.louisvillemusicco.com/repairs-128015.cfm"><h3>Instrument Repairs</h3></a></li>
 
-			<li>Our in-house repair facility is one of the best in the world, headed by Norm Epley, there is nothing that we can't fix or service.</li>
-			
-			<li><a href="http://www.louisvillemusicco.com/band-pages-131005.cfm"><h3>Band Pages</h3></a></li>
-			
-			<li>Are you a band director in the Louisville, KY area? You've got to try-out our Band Pages. We put all of your music supplies (method books, tuners, etc.) in a place where your students (and their parents) can find them. Best part about signing up for a Band Page? Your school will get 2% back on any purchase your students make in our Louisville music store, or on-line — rentals included!</li>
+		<h1>Instruments for Sale</h1>
+			<ul>
+				
+				<li>
+					Shop for all types of musical instruments from top manufacturers with the help of our expert staff.
+				</li>
+				
+				<li>
+					<a href="http://www.louisvillemusicco.com/rentals-128014.cfm">
+						<h3>Instrument Rentals</h3><img src="images/thumbsUp.svg" class="animated infinite wobble">
+					</a>
+				</li>
+				
+				<li>
+					Renting a musical instrument allows you the flexibility to try before you buy, a great option especially for younger musicians and students, with absolutely no long-term contract of commitment.</li>
+				
+				<li><h3>Music Supplies</h3></li>
+				<li>
+					We offer parts and accessories for all brass, wind, string and percussion instruments from top manufacturers.</li>
+					
+				<li><a href="http://www.louisvillemusicco.com/lessons-128062.cfm"><h3>Music Lessons</h3><img src="images/thumbsUp.svg" class="animated infinite wobble"></a></li>
+					
+				<li>
+					<a href="mailto:info@louisvillemusicco.com?subject=Messages%20from%20site">Contact us</a> about music lessons for children, teens and adults from some of the best music teachers in Louisville
+				</li>
+					
+				<li><a href="http://www.louisvillemusicco.com/repairs-128015.cfm"><h3>Instrument Repairs</h3><img src="images/thumbsUp.svg" class="animated infinite wobble"></a></li>
 
-			
-		</ul>	
+				<li>Our in-house repair facility is one of the best in the world, headed by Norm Epley, there is nothing that we can't fix or service.</li>
+				
+				<li><a href="http://www.louisvillemusicco.com/band-pages-131005.cfm"><h3>Band Pages</h3><img src="images/thumbsUp.svg" class="animated infinite wobble"></a></li>
+				
+				<li>Are you a band director in the Louisville, KY area? You've got to try-out our Band Pages. We put all of your music supplies (method books, tuners, etc.) in a place where your students (and their parents) can find them. Best part about signing up for a Band Page? Your school will get 2% back on any purchase your students make in our Louisville music store, or on-line — rentals included!</li>
+
+				
+			</ul>	
 	</div>
 </div>
 
@@ -205,6 +210,7 @@
 
 
 <div class="lessons entry">
+	<img src="images/learn.svg" class="areaIdImage" alt="Book">
 		<h1>Lessons</h1>
 			
 		<p>
@@ -236,7 +242,7 @@
 </div>
 
 <div class="joinUs entry">
-	<a href="mailto:info@louisvillemusicco.com?subject=Messages%20from%20site"><img src="images/email.svg" class="email" alt="Large Email Icon Click for email to be setup in default email client"></a>
+	<a href="mailto:info@louisvillemusicco.com?subject=Messages%20from%20site"><img src="images/email.svg" class="areaIdImage" alt="Large Email Icon Click for email to be setup in default email client"></a>
 	<h1>Join The Louisville Music Co.</h1>
 
 	<p>If you feel you'd be a great part of our Louisville, KY-based team. <br> Please send us a resume and letter of intent to:
@@ -331,9 +337,9 @@
 <script type="text/javascript">
 	jQuery(document).ready(function() {
 		jQuery('.entry').addClass("hidden").viewportChecker({
-		    classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
-		    offset: 100    
-		   });   
+		    classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
+		    offset: 100
+		    }); 
 	});                   
 </script>
 

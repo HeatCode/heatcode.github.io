@@ -1,251 +1,197 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Account Login</title>
-		<link href='http://fonts.googleapis.com/css?family=Raleway|Open+Sans' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign-Up/Login Form</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-    
-    <header>
-<!-- .icons Facebook & Twitter -->		
-		<div class="icons">
-        <a href="index.html" alt="home"><img src="images/fleur-de-lis3.jpg" class="tfIcons"></a>
+  <header>
+<!-- .icons Facebook & Twitter -->    
+    <div class="icons">
+        <a href="index.html" alt="home">
+          <img src="images/fleur-de-lis3.jpg" class="tfIcons"></a>
         <a href="https://twitter.com/LMCmusiccompany" class="tfIcons">
-					<img src="images/t.svg">
-				</a>
-				<a href="https://www.facebook.com/pages/Louisville-Music-Co/129696240544295?ref=hl" class="tfIcons">
-				<img src="images/f.svg">
-				</a>
-
-				<a href="https://plus.google.com/u/0/+Louisvillemusicco01/posts" class="tfIcons"><img src="images/g+.svg"></a>
-			</div>
+          <img src="images/t.svg">
+        </a>
+        <a href="https://www.facebook.com/pages/Louisville-Music-Co/129696240544295?ref=hl" class="tfIcons">
+          <img src="images/f.svg">
+        </a>
+        <a href="https://plus.google.com/u/0/+Louisvillemusicco01/posts" class="tfIcons">
+          <img src="images/g+.svg"></a>
+      </div>
 </div>
 </header>
 
 
-    <body>
+  <body>
+
+<div class="form">
+
+  <ul class="tab-group">
+    <li class="tab active"><a href="#signup">Sign Me Up</a></li>
+    <li class="tab"><a href="#login">Log In</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="signup">
+      <h1>I am a New customer</h1>
+
       <form id="form" action="..." method="post">
 
-       <h2>Sign in or create an account.</h2>
-       <p>* = Required Fields</p>
-
-        <fieldset>
-          
-          <legend>
-          	<span class="number">I am a returning customer. </span>
-          </legend>   
-          
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email">
-            <label for="password">Password:                 </label>
-            <input type="password" id="password" name="user_password">
-
-            <button type="submit" id="fbutton">Go!</button>
-
-     	</fieldset>
-
-        
-
-         <fieldset>
-          
-          <legend>
-          	<span class="number"> I am a New customer.
-          	</span>
-          </legend>   
-          
-          
-         	<label for="name">
-         		Name:
-         	</label>
-            <input type="text" id="name" name="user_name">
-            
-            <label for="mail">
-            	Email:
-            </label>
-            <input type="email" id="mail" name="user_email">
-            
-            <label for="password">
-            	Password:
-            </label>
-            <input type="password" id="password" name="user_password">
-            
+        <div class="top-row">
+          <div class="field-wrap">
             <label>
-            	Age:
+              First Name<span class="req">*</span>
             </label>
-            <input type="radio" id="under_13" value="under_13" name="user_age">
+            <input type="text" required autocomplete="On" />
+          </div>
 
-            <label for="under_13" class="light">
-            	Under 13
+          <div class="field-wrap">
+            <label>
+              Last Name<span class="req">*</span>
             </label>
-            <br>
-          <input type="radio" id="over_13" value="over_13" name="user_age">
+            <input type="text" required autocomplete="off" />
+          </div>
+        </div>
 
-          <label for="over_13" class="light">
-          	13 or Older
+        <div class="field-wrap">
+          <label>
+            Email Address<span class="req">*</span>
           </label>
-                 
-          
-        </fieldset>	
+          <input type="email" required autocomplete="off" />
+        </div>
 
+        <div class="field-wrap">
+          <label>
+            Set A Password<span class="req">*</span>
+          </label>
+          <input type="password" required autocomplete="off" />
+        </div>
 
+        <div class="field-wrap">
+           <h2>Tell Us About Yourself</h2>
+           
+        </div>
 
+        <div class="field-wrap">
+          <label for="bio"> Biography:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </div>
 
-        
-        <fieldset>
-          
-          	<legend>
-      			<span class="number"> 
-          			Your Profile
-          		</span>
-      		</legend>
+         
+      <!-- Drop Down -->
 
-            <label for="bio">
-            	Biography:
-            </label>
-            <textarea id="bio" name="user_bio">
-            </textarea>
+<div class="field-wrap">
+  <select name="user_interest">
+   <optgroup label="Music">
+      <option value="What_Do_You_Do">What Do  You Do? What Do You Love?
+      </option>
+      <option value="performers_writers">Performers and Writers
+      </option>
+      <option value="recording">
+        Recording
+      </option>
+      <option value="music_education">
+          Music Education
+      </option>
+      <option value="radio_TV">
+        Radio and Television
+      </option>
+      <option value="symphony_orchestra">
+        Symphony and Orchestra
+      </option>
+      <option value="gospel">
+        Gospel
+      </option>
+      <option value="music_health">
+        Music Health
+      </option>
+      <option value="music_industry_merchandising">
+        Music Industry Merchandising
+      </option>
+      <option value="instrument_work_ development">
+        Instrument Work and Development
+      </option>
+      <option value="musical_composer">
+        Musical Composer
+      </option>
+      <option value="music_director/producer">
+        Music Director/Producer
+      </option>
+      <option value="orchestra_conductor">
+        Orchestra Conductor
+      </option>
+      <option value="professional_musician">
+        Professional Musician
+      </option>
+      <option value="stage_manager">
+        Stage Manager
+      </option>
+      <option value="technical_writer">
+        Technical Writer
+      </option>
+    </optgroup>
 
-            <label for="job">
-            	What Are You Interested In?
-            </label>     
-            <!-- Drop Down -->
+    <optgroup label="Drama/Theater Arts/Theater"> 
+      <option value="arranger">
+        Arranger
+      </option>
+      <option value="choreographer">
+        Choreographer
+      </option>
+      <option value="college_instructor">
+        College nstructor
+      </option>
+    </optgroup>
+         
+  </select> 
+</div>
+        <button type="submit" class="button button-block" />Get Started</button>
 
-          <select id="job" name="user_interest">
-           <optgroup label="Music">
-		      <option value="performers_writers">
-		      	Performers and Writers
-		      </option>
-		      <option value="recording">
-		      	Recording
-		      </option>
-			  <option value="music_education">
-			    	Music Education
-			  </option>
-			<option value="radio_TV">
-					Radio and Television
-			</option>
-			<option value="symphony_orchestra">
-				Symphony and Orchestra
-			</option>
-			<option value="gospel">Gospel</option>
-			<option value="music_health">
-				Music Health
-			</option>
-			<option value="music_industry_merchandising">
-				Music Industry Merchandising
-			</option>
-			<option value="instrument_work_ development">
-				Instrument Work and Development
-			</option>
-			<option value="musical_composer">
-				Musical Composer
-			</option>
-			<option value="music_director/producer">
-				Music Director/Producer
-			</option>
-			<option value="orchestra_conductor">
-				Orchestra Conductor
-			</option>
-			<option value="professional_musician">
-				Professional Musician
-			</option>
-			<option value="stage_manager">
-				Stage Manager
-			</option>
-			<option value="technical_writer">
-				Technical Writer
-			</option>
-        </optgroup>
-
-
-        <optgroup label="Drama/Theater Arts/Theater"> 
-
-            <option value="arranger">
-            	Arranger
-            </option>
-            <option value="choreographer">
-            	Choreographer
-            </option>
-            <option value="college_instructor">
-            	College nstructor
-            </option>
-		</optgroup>
-             
-        
-        </select> 
-          <label>Level of Education:</label>
-		<input type="checkbox" id="developement" value="education_level_new" name="user_education">
-
-		<label class="light" for="newb">
-			Complete Newb.  That's OK we love Newbs!
-		</label>
-		<br>
-          
-          <input type="checkbox" id="design" value="education_level_aas" name="user_education">
-          <label class="light" for="aas">
-        	  A.A.S
-      	  </label>
-      	  <br>
-          
-          <input type="checkbox" id="business" value="education_level_ba" name="user_education">
-
-          <label class="light" for="ba">B.A.</label>
-          <br>
-          <input type="checkbox" id="business" value="education_level_phd" name="user_education">
-
-          <label class="light" for="phd">PhD</label>
-     </fieldset>
-        
-        
-        <button type="submit" id="fbutton">Go!</button>
-      
-        
-        
       </form>
-      
-  <!-- JS for Submit Go Button
-  To display form information -->
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js">
-</script>
+    </div>
 
-<script>
-     $(document).ready(function(){
-       $('#form').submit(function(){
-      alert("Your information has been sent, in theory. Unfortunately, we do not have a server connected at this time.");
+    <div id="login">
+      <h1>Welcome Back!</h1>
 
-      });
-   });
+      <form action="/" method="post">
 
+        <div class="field-wrap">
+          <label>
+            Email Address<span class="req">*</span>
+          </label>
+          <input type="email" required autocomplete="off" />
+        </div>
 
-</script>
+        <div class="field-wrap">
+          <label>
+            Password<span class="req">*</span>
+          </label>
+          <input type="password" required autocomplete="off" />
+        </div>
 
+        <p class="forgot"><a href="#">Forgot Password?</a></p>
 
+        <button class="button button-block" />Log In</button>
 
+      </form>
 
+    </div>
 
+  </div>
+  <!-- tab-content -->
 
+</div>
+<!-- /form -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/index.js"></script>
 
 
-    </body>
+     
+  </body>
 </html>
