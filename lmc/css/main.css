@@ -145,7 +145,8 @@ Search bar and images (#shopConnect)
   width: 100%;
   height: auto;
   background: transparent;
-
+  overflow-y: hidden; // hide vertical
+  overflow-x: hidden; // hide horizontal
 }
 
 
@@ -496,4 +497,3 @@ REPONSIVE CSS
     width: 100%;
     }
 }
-
