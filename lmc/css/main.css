@@ -46,6 +46,11 @@ span {
 /********************
 Top Navigation bar
 ********************/
+.topnav{
+    display:fixed;
+    padding-bottom:10px;
+    margin:0 auto;
+    }
 
 #menuA li {
     font-family: 'Raleway', sans-serif;
