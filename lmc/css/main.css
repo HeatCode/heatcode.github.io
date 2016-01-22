@@ -8,6 +8,9 @@
 
 body {
   background:#fff;
+  padding-top: 100px;
+  margin-top: 100px;
+
 }
 
 h3 {
@@ -46,10 +49,14 @@ span {
 /********************
 Top Navigation bar
 ********************/
-.topnav{
-    position:fixed;
-    padding-bottom:10px;
-    margin:0 auto;
+.topnav {
+  position:fixed;
+  background:#fff;
+  box-shadow:0 1px 4px rgba(0,0,0,.4);  
+  width:100%;
+  top:0;
+  padding-bottom: 10px;
+  z-index: 1;
     }
 
 #menuA li {
@@ -64,8 +71,8 @@ Top Navigation bar
     font-weight: normal;
     color: #8b8288;
     background-color: #fff;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
+    border-top: 3px solid solid;
+    border-bottom: 3px solid solid;
     text-align: center;
     margin: 0 auto;
     padding: 4px;
@@ -109,8 +116,8 @@ Top Navigation bar
     text-align: center;
     color: #818576;
     background-color: #FFFFFF;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
     text-align: center;
     padding: 4px;
     text-decoration: none;
@@ -152,11 +159,13 @@ Search bar and images (#shopConnect)
   background: transparent;
   overflow-y: hidden; // hide vertical
   overflow-x: hidden; // hide horizontal
+
 }
 
 
 body{
  background-color:#fff;
+ padding-top: 115px;
 }
 
 /*Search bar*/
@@ -227,7 +236,7 @@ input[type="search"] {
    display: inline-table;
    width: 50px;
    height: auto;
-   background: transparent;
+   background: #fff;
    opacity: 0.8;
 
 }
@@ -437,6 +446,7 @@ footer p {
   width: 10%;
   height: auto;
   background: transparent;
+  margin-top: 25px;
 
 }
 
